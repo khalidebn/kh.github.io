@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Portfolio</title>
+  <!-- Hacker Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Matrix Background -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Header / Navbar -->
+  <header>
+    <h1>&#60;YourName /&#62;</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Cybersecurity Specialist & Ethical Hacker</h2>
+    <p class="typing" id="typing"></p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Hello, I am <span class="highlight">YourName</span>, a cybersecurity professional specialized in penetration testing, digital forensics, and vulnerability analysis. I am passionate about building and breaking systems to make them more secure.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Network Scanner</h3>
+        <p>Python-based tool that scans open ports & services.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>CTF Writeups</h3>
+        <p>Step-by-step solutions to Capture The Flag challenges.</p>
+        <a href="#">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Exploitation Lab</h3>
+        <p>Custom vulnerable apps to practice SQLi, XSS & CSRF.</p>
+        <a href="#">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="card contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return sendMessage(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&#169; 2025 YourName | Cybersecurity Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
